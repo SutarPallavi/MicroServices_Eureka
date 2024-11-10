@@ -7,27 +7,20 @@ it has three modules
 
 Important properties to mention in app.properties or app.yaml
 Client:
-eureka.instance.preferIpAddress = true 
-eureka.client.registerWithEureka = true
-eureka.client.fetchRegistry = true
-eureka.client.serviceUrl.defaultZone = http://localhost:8761/eureka
+1. eureka.instance.preferIpAddress = true 
+2. eureka.client.registerWithEureka = true
+3. eureka.client.fetchRegistry = true
+4. eureka.client.serviceUrl.defaultZone = http://localhost:8761/eureka
 
 Server:
-eureka.instance.hostname=localhost
-eureka.client.registerWithEureka=false
-eureka.client.fetchRegistry=false
-eureka.client.serviceUrl.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka
+1. eureka.instance.hostname=localhost
+2. eureka.client.registerWithEureka=false
+3. eureka.client.fetchRegistry=false
+4. eureka.client.serviceUrl.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka
 
 APIs:
-Customer service- GET API: 
-http://localhost:8090/add/{item_id}
+Customer service- GET API: http://localhost:8090/add/{item_id}
 
-Cart Service - Get API:
-http://localhost:8090/addToCart/{item_id}
+Cart Service - Get API: http://localhost:8090/addToCart/{item_id}
 
-Eureka Server:
-http://localhost:8761/
-
-
-
-
+Eureka Server: http://localhost:8761/
