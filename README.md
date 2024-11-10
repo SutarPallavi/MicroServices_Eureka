@@ -11,6 +11,7 @@ eureka.instance.preferIpAddress = true
 eureka.client.registerWithEureka = true
 eureka.client.fetchRegistry = true
 eureka.client.serviceUrl.defaultZone = http://localhost:8761/eureka
+
 Server:
 eureka.instance.hostname=localhost
 eureka.client.registerWithEureka=false
